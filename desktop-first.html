@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop First</title>
+    <style>
+        /* 1) Regras de uso geral */
+        * { box-sizing: border-box; }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightblue;
+        }
+        h1{
+            color: darkblue;
+            text-align: center;
+            font-size: 45px;
+        }
+        h2{ text-align: center; }
+
+        /* 2) Regas de uso condicional */
+        @media screen and (max-width: 682px) {
+            h1 { font-size: 40px; }
+            h2 { text-align: left; }
+            body { background-color: lightgreen; }
+        }
+
+        @media screen and (max-width: 470px) {
+            h1 { font-size: 30px; }
+            h2 { font-size: 20px; }
+            hr { display: none; }
+            p { text-align: center; }
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Desktop First</h1>
+    <hr>
+    <h2>Definição</h2>
+    <p>Fluxo de desenvolvimento responsivo pensando inicialmente para telas grandes (computadores, notebook, tv, etc).</p>
+    <p>Em resumo: <b>vai da tela grande para a tela pequena</b> </p>
+    
+</body>
+</html>
